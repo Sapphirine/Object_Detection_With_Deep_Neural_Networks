@@ -14,7 +14,7 @@
 
 ### For Fast RCNN (Used to build object detection models)
 
-* [CAFFE] (https://github.com/BVLC/caffe)
+* [CAFFE](https://github.com/BVLC/caffe)
 
 * [FastRCNN](https://github.com/rbgirshick/caffe-fast-rcnn). Ensure that you have all the software and hardware requirements necessary for building models.
 
@@ -24,7 +24,7 @@
 
 Building Fast RCNN can be a difficult task. Here are some general instructions to get you past some of the more difficult parts. These instructions apply to a system running Ubuntu 16.04 Linux.
 
-* Build OpenCV and CAFFE with Python bindings according to [this ](https://github.com/BVLC/caffe/wiki/OpenCV-3.1-Installation-Guide-on-Ubuntu-16.04). If you have an Nvidia GPU, I strongly recommend you install CUDA to enable GPU processing. First step: download required source for both.
+* Build OpenCV and CAFFE with Python bindings according to [this](https://github.com/BVLC/caffe/wiki/OpenCV-3.1-Installation-Guide-on-Ubuntu-16.04). If you have an Nvidia GPU, I strongly recommend you install CUDA to enable GPU processing. First step: download required source for both.
 
 * Next step is to build OpenCV. Follow the instructions on what CMAKE parameters to build OpenCV with. I used cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES" -D INSTALL_PYTHON_EXAMPLES=ON .. . This sets OpenCV to be built with the following: TBB (Intel Threading Blocks), V4L, QT, CUBLAS, CUDA. It also turns on the Python examples. Note: QT is optional. DO NOT enable the extra OpenCV modules (-DOPENCV_EXTRA_MODULES_PATH=..) or OpenCV's Deep Neural Network module-a dependency issue has been known to arise when attempting to build Python enabled CAFFE (there is some tangle involving libopencv_dnn_modern.so). To be double sure of not building OpenCV's DNN, include -D BUILD_OPENCV_DNN=OFF in your cmake statement.
 
