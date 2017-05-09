@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Visual Search Engine</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="landing_hints">It will take some time to init at first</string>
+
+	<string name="picture">Scene</string>
+    <string name="picture_detect">Search!</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="intro_message">
+        <![CDATA[
+
+            Visual Search Engine \n
+
+            Powered by via Fast RCNN \n
+
+            Based on Android-Object-Detection \n
+
+            (https://github.com/tzutalin/Android-Object-Detection)
+        ]]>
+    </string>
+    <string name="title_activity_scene_recognition">SceneRecognitionActivity</string>
+    <string name="title_activity_object_detect">ObjectDetectActivity</string>
+    <string name="dialog_wait">Please wait</string>
+    <!--Old text of below->Selective Search + Region-based Convolutional Networks (Fast RCNN)-->
+    <string name="dialog_object_decscription">Searching for known objects</string>
+    <string name="dialog_scene_decscription">Run Convolutional Networks </string>
+</resources>
