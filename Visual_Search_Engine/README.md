@@ -2,7 +2,7 @@
 
 ## Object Detection Project for EECS 6895, Columbia University, Spring 2017
 
-* This project is based off of [Android-Object-Detection] ()https://github.com/tzutalin/Android-Object-Detection). This version breaks the dependency on the /sdcard path (not all devices, such as Samsung Android phones have this path) and moves object detection rendering from the OpenCV layer to the Android layer. These changes make the demo completely runnable on any Android device.
+* This project is based off of [Android-Object-Detection](https://github.com/tzutalin/Android-Object-Detection). This version breaks the dependency on the /sdcard path (not all devices, such as Samsung Android phones have this path) and moves object detection rendering from the OpenCV layer to the Android layer. These changes make the demo completely runnable on any Android device.
 
 * Android 4.0+ support (for Visual Search Engine Project)
 
